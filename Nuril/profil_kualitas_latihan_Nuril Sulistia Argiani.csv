@@ -1,0 +1,11 @@
+dimensi,kolom,masalah,jumlah,persen,keparahan,rencana
+Kelengkapan,berat_kg,Kosong untuk kategori non-fisik (MAR),351,22.75,Rendah,"Tandai tidak berlaku, bukan diisi"
+Keunikan,seluruh kolom,Baris duplikat persis,24,1.56,Sedang,"Hapus, simpan satu"
+Kelengkapan,saldo_simpanan,"Kosong, diduga MNAR",159,10.3,Tinggi,Jangan diimputasi; tanyakan ke pengurus koperasi
+Kelengkapan,rating_layanan,Placeholder -999,49,3.18,Tinggi,Ubah menjadi NaN sebelum dihitung
+Validitas,jumlah,Nilai nol atau negatif,29,1.88,Tinggi,"Telusuri apakah retur; bila bukan, keluarkan dari analisis"
+Konsistensi,kategori,Satu kategori ditulis beberapa cara,13,0.84,Tinggi,Seragamkan; sinonim diputuskan manual
+Spasi pada id_anggota,Ditemukan kemungkinan spasi pada nilai id_anggota,Rendah,65,4.21,id_anggota,Hapus spasi dengan strip()
+id_transaksi kosong atau berulang,ID transaksi perlu diperiksa karena dapat kosong atau muncul lebih dari satu kali,Tinggi,56,3.63,id_transaksi,Periksa ID kosong dan duplikat sebelum analisis
+Placeholder teks pada metode_bayar,Ditemukan nilai placeholder pada kolom metode_bayar,Sedang,13,0.84,metode_bayar,Periksa dan ubah placeholder menjadi nilai kosong (NaN)
+total_bayar bertipe teks,Sebagian nilai total_bayar masih berupa teks atau format Rp,Sedang,250,16.2,total_bayar,Bersihkan format Rp lalu konversi menjadi numerik
